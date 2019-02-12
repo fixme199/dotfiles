@@ -1,0 +1,36 @@
+# https://github.com/oumu/mintty-color-schemes
+
+ThemeFile=
+Transparency=medium
+Font=Myrica M
+FontHeight=14
+Locale=ja_JP
+Charset=UTF-8
+MiddleClickAction=void
+RightClickAction=paste
+ClicksTargetApp=no
+CopyAsRTF=no
+Language=
+Term=xterm-256color
+OpaqueWhenFocused=yes
+CursorType=line
+CursorBlinks=yes
+
+ForegroundColour=248,248,248
+BackgroundColour=20,20,20
+Black=0,0,0              # black     #000000
+BoldBlack=80,80,80       # bgray     #505050
+Red=249,38,114           # pink      #F92672
+BoldRed=255,0,0          # red       #FF0000
+Cyan=102,217,239         # cyan      #66D9EF
+BoldCyan=0,255,255       # aqua      #00FFFF
+Green=135,255,0          # limegreen #87FF00
+BoldGreen=0,255,0        # green     #00FF00
+Yellow=230,219,116       # anis      #E6DB74
+BoldYellow=253,151,31    # orange    #FD971F
+Blue=174,129,255         # lightblue #AE81FF
+BoldBlue=0,136,255       # blue      #0088FF
+Magenta=197,47,197       # purple    #C52FC5
+BoldMagenta=255,0,255    # magenta   #FF00FF
+White=255,255,255        # white     #FFFFFF
+BoldWhite=170,170,170    # wgray     #AAAAAA
