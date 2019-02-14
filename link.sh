@@ -1,9 +1,12 @@
 #!/bin/zsh
 
-for dot in ${HOME}/.dotfiles/.??*
-do
-    local t="$(basename $dot)"
-    [[ "$t" == ".git" ]] && continue
+SCRIPT_DIR=$(cd $(dirname $0); pwd)
 
-    ln -snfv "${HOME}/.dotfiles/${t}" "${HOME}/${t}"
+for dot in ${SCRIPT_DIR}/.??*
+do
+    local target="$(basename $dot)"
+    [[ "$target" == ".git" ]] && continue
+    [[ -d $dot ]] && continue
+
+    ln -snfv "${SCRIPT_DIR}/${target}" "${HOME}/${target}"
 done
