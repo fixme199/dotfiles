@@ -10,7 +10,6 @@ SAVEHIST=100000
 setopt auto_cd
 setopt auto_list
 setopt auto_menu
-setopt globdots
 setopt hist_ignore_dups
 setopt share_history
 
@@ -31,8 +30,8 @@ alias ls='ls --color=auto'
 alias ll='ls -lphA --group-directories-first --time-style=long-iso'
 
 ##### bindkey #####
-bindkey "^[[H"    beginning-of-line   # Home
-bindkey "^[[F"    end-of-line         # End
+bindkey "^[[1~"   beginning-of-line   # Home
+bindkey "^[[4~"   end-of-line         # End
 bindkey "^[[3~"   delete-char         # Delete
 bindkey "^[[1;5D" emacs-backward-word # Ctrl + Left
 bindkey "^[[1;5C" emacs-forward-word  # Ctrl + Right
