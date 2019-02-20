@@ -21,6 +21,7 @@ zstyle ':completion:*:default' menu select=1
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 ##### source #####
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
 ##### export #####
 export DOTFILES="$HOME/.dotfiles"

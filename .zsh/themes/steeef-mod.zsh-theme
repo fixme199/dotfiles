@@ -53,7 +53,7 @@ zstyle ':vcs_info:*:prompt:*' check-for-changes true
 # %S - path in the repository
 FMT_BRANCH="(${COLOR_CYAN}%b%u%c${COLOR_RESET})"
 FMT_ACTION="(${COLOR_LIMEGREEN}%a${COLOR_RESET})"
-FMT_UNSTAGED="${COLOR_ORANGE}!!"
+FMT_UNSTAGED="${COLOR_ORANGE}!"
 FMT_STAGED="${COLOR_LIMEGREEN}*"
 
 zstyle ':vcs_info:*:prompt:*' unstagedstr   "${FMT_UNSTAGED}"
@@ -88,7 +88,7 @@ function steeef_precmd {
         # check for untracked files or updated submodules, since vcs_info doesn't
         if git ls-files --other --exclude-standard 2> /dev/null | grep -q "."; then
             PR_GIT_UPDATE=1
-            FMT_BRANCH="(${COLOR_CYAN}%b%u%c${COLOR_PINK}!${COLOR_RESET})"
+            FMT_BRANCH="(${COLOR_CYAN}%b%u%c${COLOR_PINK}?${COLOR_RESET})"
         else
             FMT_BRANCH="(${COLOR_CYAN}%b%u%c${COLOR_RESET})"
         fi

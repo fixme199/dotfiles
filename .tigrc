@@ -30,7 +30,7 @@ bind generic w move-page-up
 set git-colors = no
 
 color cursor               003     008
-color title-blur           000     005
+color title-blur           000     002
 color title-focus          006     000
 color status               003     000
 color header               default 000
@@ -46,34 +46,34 @@ color main-remote          001     default
 color main-tracked         011     default
 color main-tag             004     default
 color main-local-tag       004     default
-color palette-0            013     default
+color palette-0            001     default
 color palette-1            011     default
 color palette-2            006     default
 color palette-3            002     default
 color palette-7            004     default
-color palette-9            005     default
+color palette-9            014     default
 
-color 'commit '            002     232
-color 'Refs: '             161     232
-color 'Author: '           006     232
-color 'AuthorDate: '       006     232
-color 'Commit: '           208     232
-color 'CommitDate: '       208     232
-color '---'                243     default
-color diff-stat            067     default
-color diff-header          243     232
-color 'old file mode '     162     232
-color 'new file mode '     002     232
-color 'deleted file mode ' 162     232
-color diff-index           243     232
-color '--- '               162     232
-color '+++ '               002     232
-color diff-chunk           161     default
-color diff-del             162     default
+color 'commit '            002     000
+color 'Refs: '             001     000
+color 'Author: '           006     000
+color 'AuthorDate: '       006     000
+color 'Commit: '           011     000
+color 'CommitDate: '       011     000
+color '---'                008     default
+color diff-stat            006     default
+color diff-header          000     003
+color 'old file mode '     001     000
+color 'new file mode '     002     000
+color 'deleted file mode ' 013     000
+color diff-index           008     000
+color '--- '               001     000
+color '+++ '               002     000
+color diff-chunk           001     default
+color diff-del             001     default
 color diff-add             002     default
 
 color stat-staged          002     default
-color stat-unstaged        162     default
+color stat-unstaged        011     default
 
-color mode                 067     default
-color directory            blue    default bold
+color mode                 006     default
+color directory            012     default
