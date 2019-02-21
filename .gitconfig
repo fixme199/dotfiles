@@ -2,3 +2,6 @@
 	useConfigOnly = true
 [credential]
 	helper = store
+[core]
+	quotepath = false
+	autocrlf = false
