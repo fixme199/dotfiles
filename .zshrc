@@ -43,11 +43,6 @@ case ${OSTYPE} in
     linux*)
         source /usr/share/nvm/init-nvm.sh
         ;;
-    msys*)
-        export NVM_HOME="$HOME/.nvm"
-        export NVM_SYMLINK="$NVM_HOME/node"
-        export PATH="$PATH:$NVM_HOME:$NVM_SYMLINK"
-        ;;
 esac
 
 ##### zplug #####
