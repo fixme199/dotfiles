@@ -14,6 +14,7 @@ setopt hist_ignore_dups
 setopt share_history
 
 unsetopt list_types
+unsetopt prompt_sp
 
 export LS_COLORS='di=94:ln=36:ex=32:so=46;34:pi=43;34'
 

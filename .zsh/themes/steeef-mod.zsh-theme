@@ -109,8 +109,8 @@ function echo_upper_line {
 
     local left_length=${#${(S%%)left//$~invisible/}}
     local right_length=${#${(S%%)right//$~invisible/}}
-    local padding=$(($COLUMNS - ($left_length + $right_length + 2)))
-    echo "$left ${COLOR_DARKGRAY}${(r:$padding::-=:)}${COLOR_RESET} $right"
+    local padding=$(($COLUMNS - ($left_length + $right_length + 3)))
+    echo "$left ${COLOR_DARKGRAY}${(r:$padding::-:)}${COLOR_RESET} $right"
 }
 
 PROMPT=$'
